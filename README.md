@@ -2,6 +2,12 @@
 
 快速部署Arch Linux为我的配置
 
+[Gitee](https://gitee.com/chitang233/Fast-Deploy-Arch)
+
+[Github](https://github.com/chitang233/Fast-Deploy-Arch)
+
+[Blog](https://chitang.tk)
+
 ## 使用方法
 
 ### 预先准备
