@@ -15,6 +15,7 @@ echo "[multilib]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 echo "[archlinuxcn]" >> /etc/pacman.conf
 echo "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch" >> /etc/pacman.conf
+pacman -S archlinuxcn-keyring
 
 # Sync packages databases
 pacman -Syy
