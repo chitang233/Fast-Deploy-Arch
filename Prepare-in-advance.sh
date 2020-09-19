@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Install base-devel
-pacman -S base-devel
+# Install some tools
+pacman -S base-devel git
 
 # Change mirrorlist
 mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
