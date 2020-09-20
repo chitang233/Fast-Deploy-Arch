@@ -1,7 +1,7 @@
 install-all:
 	#install zsh
-	pacman -S zsh #install zsh
-	chsh -s /bin/zsh #change default terminal to zsh
+	sudo pacman -S zsh #install zsh
+	sudo chsh -s /bin/zsh #change default terminal to zsh
 	#install zsh frameworks
 	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" #Install ohmyzsh
 	wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh #Install zimfw
@@ -14,15 +14,15 @@ install-all:
 	mv ~/.p10k.zsh ~/.p10k.zsh.bak
 	cp /tmp/chitang/zsh/zshrc ~/.zshrc
 	cp /tmp/chitang/zsh/zimrc ~/.zimrc
-	cp /tmp/chitang/zsh/p10k.zsh ~/.p10k.zsh
+	cp /tmp/chitang/zsh/p9k.zsh ~/.p10k.zsh
 	cp -r /tmp/chitang/zsh/* ~/.config/zsh/
 	rm ~/.config/zsh/zimrc ~/.config/zsh/zshrc ~/.config/zsh/p10k.zsh
 	echo "Success"
 
 install-zsh:
 	#install zsh
-	pacman -S zsh #install zsh
-	chsh -s /bin/zsh #change default terminal to zsh
+	sudo pacman -S zsh #install zsh
+	sudo chsh -s /bin/zsh #change default terminal to zsh
 	#install zsh frameworks
 	sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" #Install ohmyzsh
 	wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh #Install zimfw
@@ -44,10 +44,10 @@ install-config:
 
 clean:
 	rm -rf /tmp/chitang
-	pacman -Scc
+	sudo pacman -Scc
 
 uninstall-all:
-	pacman -R zsh
+	sudo pacman -R zsh
 	rm ~/.zshrc ~/.zimrc ~/.p10k.zsh
 	mv ~/.zshrc.bak ~/.zshrc
 	mv ~/.zimrc.bak ~/.zimrc
@@ -58,7 +58,7 @@ uninstall-all:
 	rm -rf ~/.zim
 	
 uninstall-zsh:
-	pacman -R zsh
+	sudo pacman -R zsh
 	rm -rf ~/.oh-my-zsh
 	rm -rf ~/.zim
 	

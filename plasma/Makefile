@@ -1,9 +1,11 @@
 
 install-plasma:
-	pacman -S plasma kde-applications
+	sudo pacman -S plasma kde-applications
 
 install-sddm:
-	pacman -S sddm sddm-kcm
+	sudo pacman -S sddm sddm-kcm
+	sudo systemctl enable sddm
 
 install-all:
-	pacman -S plasma kde-applications sddm sddm-kcm
+	sudo pacman -S plasma kde-applications sddm sddm-kcm
+	sudo systemctl enable sddm

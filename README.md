@@ -44,6 +44,6 @@ clean	#清理安装过程中产生的软件包缓存
 git clone https://github.com/chitang233/Fast-Deploy-Arch
 (or git clonehttps://gitee.com/chitang233/Fast-Deploy-Arch)
 cd Fast-Deploy-Arch/fcitx5
-sudo make install-all
+make install-all
 ```
 
